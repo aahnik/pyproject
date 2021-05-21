@@ -8,6 +8,15 @@ readme = "README.md"
 repository = "https://github.com/aahnik/pyproject"
 documentation = "https://aahnik.github.io/pyproject"
 keywords = ["python","package","template"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "Development Status :: 4 - Beta",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
