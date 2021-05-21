@@ -1,0 +1,17 @@
+site_name: pyproject
+
+nav:
+    - Home: index.md
+    - getting_started.md
+    - notes.md
+
+repo_url: https://github.com/aahnik/pyproject
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - docs/generate.py 

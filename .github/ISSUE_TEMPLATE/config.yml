@@ -1,0 +1,7 @@
+contact_links:
+  - name: 📚 Read the docs
+    url: https://aahnik.github.io/pyproject
+    about: Make sure to go through the documentation first
+  - name: 🤷 Ask a question
+    url: https://github.com/aahnik/pyproject/discussions
+    about: Please ask and answer questions here
