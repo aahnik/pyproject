@@ -102,24 +102,29 @@
 <p>Tools used</p>
 <h2 id="dockerfile">Dockerfile</h2>
 <ul>
-<li>The Dockerfile copies the <code>tests/</code> directory from the host to image's filesystem. It also runs <code>poetry install</code> which will install development dependancies as well.</li>
+<li>The Dockerfile copies the <code>tests/</code> directory from the host to image's filesystem.
+It also runs <code>poetry install</code> which will install development dependancies as well.</li>
 <li>You may choose not to copy the <code>tests/</code> directory</li>
-<li>and you may install only the dependancies required by the application, by running <code>poetry install --no-dev</code></li>
-<li>I choose to include the tests and dev dependancies as well because the size of that is relatively small.</li>
+<li>and you may install only the dependancies required by the application,
+    by running <code>poetry install --no-dev</code></li>
+<li>I choose to include the tests and dev dependancies as well because the size of
+that is relatively small.</li>
 <li>
-<p>This also helps to test the the application in the docker environment. (that is very important)</p>
-<p>suppose your python application starts using <code>chromedriver</code> which is already installed in your system. So running tox in your system, passes all tests.
-  But you forgot to include a line in the Dockerfile that will install <code>chromedriver</code>, but The build will still be succesful, but your application will fail to run in production.</p>
+<p>This also helps to test the the application in the docker environment.
+(that is very important)
+suppose your python application starts using <code>chromedriver</code>
+which is already installed in your system. So running tox in your system,
+passes all tests.
+But you forgot to include a line in the Dockerfile that will install <code>chromedriver</code>,
+but The build will still be succesful, but your application will fail to run in production.</p>
 </li>
 <li>
-<p>To run tests inside the container,</p>
+<p>To run tests inside the container</p>
 </li>
 </ul>
-<pre><code class="language-shell">
-docker run -it pyproject poetry run pytest
-</code></pre>
-<p>More details to be added soon.
-!</p>
+<p><code>shell
+  docker run -it pyproject poetry run pytest</code></p>
+<p>More details to be added soon!</p>
               
             </div>
           </div>
