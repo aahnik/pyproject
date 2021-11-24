@@ -1,4 +1,4 @@
-"""This is modeule docstring."""
+"""This is module docstring."""
 
 
 def function() -> str:
